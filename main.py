@@ -70,7 +70,8 @@ if __name__ == "__main__":
     plt.xlim([0, 1])      # X축의 범위: [xmin, xmax]
     plt.ylim([0, 1])     # Y축의 범위: [ymin, ymax]
 
-    plt.plot(correct_x1_list, correct_x2_list, 'gs', wrong_x1_list, wrong_x2_list, 'rs')
+    plt.plot(correct_x1_list, correct_x2_list, 'gs', markersize=10)
+    plt.plot(wrong_x1_list, wrong_x2_list, 'rs', markersize=10)
     plt.xticks(np.arange(0, 1.1, 0.1))
     plt.yticks(np.arange(0, 1.1, 0.1))
     plt.text(0, -0.1, "Number of correct values:" + str(correct_count))
